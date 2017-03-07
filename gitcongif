@@ -1,0 +1,23 @@
+[user]
+  email = axelle.boucher@bearstudio.fr
+  name = Axelle Boucher
+
+[core]
+  excludesfile = /home/axelle/.gitignore_global
+
+
+[alias]
+  st = status
+  ci = commit
+  co = checkout
+  unstage = reset HEAD --
+  unmerged = branch -r --no-merged 
+  last = log -1 HEAD
+  lg = log --pretty=oneline --graph --abbrev-commit
+  conflicts = diff --name-only --diff-filter=U
+  untrack = rm --cached
+
+[color "status"]
+  added = green 
+  changed = yellow
+  untracked = red
