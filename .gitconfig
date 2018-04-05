@@ -9,7 +9,8 @@
 [alias]
   st = status
   ci = commit
-  co = checkout
+  ch = checkout
+  cht = "!f() { git checkout --track origin/$1; }; f"
   unstage = reset HEAD --
   unmerged = branch -r --no-merged 
   last = log -1 HEAD
